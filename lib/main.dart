@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ambil_gambar.dart';
 import 'ambil_video.dart';
+import 'profil.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 2,
+        length: 3,
         child: Scaffold(
           appBar: AppBar(
             title: Text(
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
                   icon: Icon(Icons.video_library),
                   text: "Ambil Video",
                 ),
+                Tab(
+                  icon: Icon(Icons.person),
+                  text: "Profil",
+                ),
               ],
               indicatorColor: Colors.amber,
             ),
@@ -37,6 +42,7 @@ class MyApp extends StatelessWidget {
               children: [
                 AmbilGambar(),
                 AmbilVideo(),
+                Profile(),
               ],
             ),
           ),

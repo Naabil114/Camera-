@@ -115,7 +115,7 @@ class _AmbilVideoState extends State<AmbilVideo> {
                                 _videoController!.value.isPlaying
                                     ? Icons.pause
                                     : Icons.play_arrow,
-                                size: 40,
+                                size: 40, 
                                 color: Colors.white,
                               ),
                               onPressed: () {
